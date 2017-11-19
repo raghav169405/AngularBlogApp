@@ -1,0 +1,16 @@
+<form >
+  <div class="form-group">
+    <label >Title</label>
+    <input  class="form-control"  placeholder="Title" #title>
+  </div>
+  <div class="form-group">
+    <label >Category</label>
+    <input  class="form-control"  placeholder="Category" #category>
+  </div>
+  <div>
+  <label >Body</label>
+  <input  class="form-control"   #body>
+  </div>
+  <br>
+  <button type="submit" class="btn btn-primary" (click)="Create(title.value,category.value,body.value)">Create</button>
+</form>

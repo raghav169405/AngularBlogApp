@@ -1,0 +1,44 @@
+{
+  "blogs": [
+    {
+      "title": "Technology from “Harry Potter” Movies Brings Magic of Brain into Focus",
+      "category": "Technical",
+      "body": "The scientists’ tracings were as accurate in virtual reality as with the desktop software. But they were able to trace the neurons about 1.7 times faster using the virtual reality tool.",
+      "author": "RAGHAV",
+      "id": 1,
+      "favourite": "NO"
+    },
+    {
+      "title": "Umpiring In The Age Of Cable TV",
+      "category": "Cricket",
+      "body": "In recent years, I’ve been struck by a strange feature of the way cricket is discussed. On the one hand, the discussion of tactics, technique and the playing conditions is more sophisticated than ever before",
+      "author": "HIMANSHU",
+      "id": 2,
+      "favourite": "NO"
+    },
+    {
+      "title": "Ben Stokes Was Out Under Law 37",
+      "category": "Cricket",
+      "body": "Ben Stokes was given out Obstructing the Field under Law 37 in the 2nd One Day International at Lord’s on September 5, 2015. The decision caused great controversy and made headlines.",
+      "author": "RAGHAV",
+      "id": 3,
+      "favourite": "NO"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "RAGHAV",
+      "email": "raghav169405",
+      "password": "1234",
+      "status": true
+    },
+    {
+      "id": 2,
+      "name": "HIMANSHU",
+      "email": "himanshu169405",
+      "password": "1234",
+      "status": false
+    }
+  ]
+}

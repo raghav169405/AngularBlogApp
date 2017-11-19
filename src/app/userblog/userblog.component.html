@@ -1,0 +1,34 @@
+ <div *ngFor="let item of blogs">
+    <div *ngIf="item.author === activeUser.name">
+      <div class="col s12 m12">
+        <div class="card darken-1">
+          <div class="card-content black-text" style="margin-right:50% ">
+
+            <h3>{{item.id}}) {{item.title}}<div *ngIf="item.favourite === 'YES'" style="color: red">&#9829;</div></h3>
+
+        <<div>
+            <span style="font-size:20px"><b>Author</b> :<i>{{item.author}}</i></span>
+            <span style="font-size:20px"><b>Category</b>:<i> {{item.category}}</i></span>
+          </div>
+
+          <br>
+          <div style="font-size:15px ">
+            {{item.body}}
+          </div>
+          </div>
+          <div class="card-action">
+            <button class="btn-btn-danger"  (click)="deleteBlog(item)"><i class="material-icons">Delete</i></button>
+            <button class="btn-btn-danger"  (click)="updateBlog(item)"><i class="material-icons" >Update</i></button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div *ngIf="isSelect==item.id">
+      <input type="text" placeholder="Title" #tit><br>
+      <input type="text" placeholder="Body" #bod><br>
+      <input type="text" placeholder="Category" #cat><br>
+      <button (click)="emitEdit(item.id,tit.value,bod.value,cat.value,item.author)">Submit</button>
+    </div>
+  </div>
+

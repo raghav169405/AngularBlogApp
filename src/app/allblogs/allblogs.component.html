@@ -1,0 +1,21 @@
+<h1 style="text-align: center"><b>All Blogs</b></h1>
+<div class= "blog-container" *ngIf='blogs'>
+  <div *ngFor="let item of blogs" style="margin-right:50% ">
+    <article>
+      <header>
+        <h3>{{item.id}}) {{item.title}}<div *ngIf="item.favourite === 'YES'" style="color: red">&#9829;</div></h3>
+        <div>
+          <span style="font-size:20px"><b>Author</b> : <i>{{item.author}}</i></span>
+          <br>
+          <span style="font-size:20px"><b>Category</b> :<i> {{item.category}}</i></span>
+        </div>
+      </header>
+      <br>
+      <div style="font-size:15px ">
+        {{item.body}}
+      </div>
+    </article>
+    <button *ngIf="checkactive()===false" class="btn-btn-danger" (click)="MarkFavaourite(item)">Mark Favourite </button>
+  </div>
+</div>
+

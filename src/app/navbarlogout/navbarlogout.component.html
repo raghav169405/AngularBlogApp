@@ -1,0 +1,24 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <p class="navbar-brand"  >Blog Application</p>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="navbar-brand">Welcome {{activeUser.name}}</li>
+      <li class="navbar-brand">
+        <a [routerLink]="['/all']" style="margin-top: -15px">
+          All Blogs
+        </a>
+      </li>
+      <li class="navbar-brand">
+        <a [routerLink]="['/userblog']" style="margin-top: -15px">
+          My Blogs
+        </a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><button class="btn-btn-default" style="margin-top: 10px" (click)="CreateClick()">Create Blog</button></li>
+      <li><a (click)="Logout()"><span class="glyphicon glyphicon-log-in" (click)="Logout()"></span> Logout</a></li>
+    </ul>
+  </div>
+</nav>
